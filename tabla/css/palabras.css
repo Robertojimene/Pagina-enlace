@@ -1,7 +1,7 @@
 
 body{
-	background-color: #632432;
-	font-family: Arial;
+	background-color: #6a18c7;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #main-container{
@@ -21,7 +21,7 @@ th, td{
 }
 
 thead{
-	background-color: #246355;
+	background-color: #0a0957;
 	border-bottom: solid 5px #0F362D;
 	color: white;
 }
