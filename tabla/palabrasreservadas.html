@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-sacale=1.0">
+	<title>Palabras reservadas</title>
+	<link rel="stylesheet" type="text/css" href="css/palabras.css">
+</head>
+<body>
+	<div id="main-container">
+
+		<table>
+			<thead>
+				<tr>
+					<th>Palabra Reservada</th><th>Descripción</th><th>Ejemplo</th>
+				</tr>
+			</thead>
+
+			<tr>
+				<td>brake</td><td>Termina el bucle actual, sentecia switch o label y transfiere el control del programa a la siguiente sentencia a la sentecia de terminación de éstos elementos.</td><td>function comprobarBreak(x) {
+   var i = 0;
+   while (i < 6) {
+      if (i == 3)
+         break;
+      i++;
+   }
+   return i * x;
+}</td>
+			</tr>
+			<tr>
+				<td>do...while</td><td>La sentencia (hacer mientras) crea un bucle que ejecuta una sentencia especificada, hasta que la condición de comprobación se evalúa como falsa. La condición se evalúa después de ejecutar la sentencia, dando como resultado que la sentencia especificada se ejecute al menos una vez.</td><td>do {
+   i += 1;
+   document.write(i);
+} while (i < 5);</td>
+			</tr>
+			<tr>
+				<td>if...else</td><td>Ejecuta una sentencia si una condición específicada es evaluada como verdadera. Si la condición es evaluada como falsa, otra sentencia puede ser ejecutada.</td><td>if (cipher_char == from_char) {
+   result = result + to_char;
+   x++;
+} else
+   result = result + clear_char;</td>
+			</tr>
+			<tr>
+				<td>for</td><td>Crea un bucle que consiste en tres expresiones opcionales, encerradas en paréntesis y separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle.</td><td>for (int i=0;i<10;i++){
+
+    system.out.println(i);
+}</td>
+			</tr>
+			<tr>
+				<td>block</td><td>Una sentencia block se utiliza para agrupar cero o más sentencias. Este grupo block se delimita por un par de llaves.</td><td>while (x < 10) {
+   x++;
+}</td>
+			</tr>
+			<tr>
+				<td>class</td><td>La declaración class crea una nueva clase con el nombre proporcionado utilizando la herencia basada en prototipos</td><td>class Polygon {
+  constructor(height, width) {
+    this.name = 'Polygon';
+    this.height = height;
+    this.width = width;
+  }
+}
+</td>
+			</tr>
+			<tr>
+				<td>const</td><td>Las variables constantes presentan un ámbito de bloque (block scope) tal y como lo hacen las variables definidas usando la instrucción let, con la particularidad de que el valor de una constante no puede cambiarse a través de la reasignación. Las constantes no se pueden redeclarar.</td><td>const a = 7;
+document.writeln("a es " + a + ".");
+</td>
+			</tr>
+			<tr>
+				<td>continue</td><td>Termina la ejecución de las sentencias de la iteración actual del bucle actual o la etiqueta y continua la ejecución del bucle con la próxima iteración.</td><td>i = 0;
+n = 0;
+while (i < 5) {
+   i++;
+   if (i == 3)
+      continue;
+   n += i;
+}</td>
+			</tr>
+			<tr>
+				<td>debugger</td><td>La sentencia debugger invoca cualquier funcionalidad de depuración disponible, tiene la misma función que un breakpoint. Si la funcionalidad de depuración no está disponible, esta sentencia no tiene efecto alguno.</td><td>function codigoPotencialmenteDefectuoso() {
+    debugger;
+    // realizar paso a paso o examinar código que contiene
+    // potenciales errores
+}</td>
+			</tr>
+			<tr>
+				<td>empty</td><td>Un empty statement o sentencia vacía es usada para no proveer una sentencia, incluso si la sintaxis JavaScript esperase una.</td><td>;</td>
+			</tr>
+			<tr>
+				<td>export</td><td>La declaración export se utiliza al crear módulos de JavaScript para exportar funciones, objetos o tipos de dato primitivos del módulo para que puedan ser utilizados por otros programas con la sentencia import.</td><td>export { name1, name2, …, nameN };
+export { variable1 as name1, variable2 as name2, …, nameN };
+export let name1, name2, …, nameN; // también var
+export let name1 = …, name2 = …, …, nameN; // también var, const</td>
+			</tr>
+				<tr>
+				<td>for await...of</td><td>La sentencia for await...of crea un bucle iterando tanto sobre objetos iterables asincrónicos como sincrónicos, incluyendo: built-in String, Array, objetos Array-like (por ej., arguments o NodeList), TypedArray, Map, Set, y async/sync iterables definidos por el usuario. Invoca un hook de iteración personalizada con sentencias a ser ejecutadas por el valor de cada propiedad diferente del objeto.</td><td>for await (variable of iterable) {
+  sentencia
+}</td>
+			</tr>
+			<tr>
+				<td>for...in</td><td>La instrucción for-in itera sobre todas las propiedades enumerables de un objeto que está codificado por cadenas (ignorando los codificados por Símbolos, incluidas las propiedades enumerables heredadas.</td><td>var obj = {a: 1, b: 2, c: 3};
+
+for (const prop in obj) {
+  console.log(`obj.${prop} = ${obj[prop]}`);
+}</td>
+			</tr>
+			<tr>
+				<td>for...of</td><td>La sentencia sentencia for...of ejecuta un bloque de código para cada elemento de un objeto iterable, como lo son: String, Array, objetos similares a array (por ejemplo, arguments or NodeList), TypedArray, Map, Set e iterables definidos por el usuario.</td><td>let iterable = [10, 20, 30];
+
+for (let value of iterable) {
+  value += 1;
+  console.log(value);
+}</td>
+			</tr>
+			<tr>
+				<td>function</td><td>Declara una función con los parámetros especificados.
+
+Puede también definir funciones usando el constructor Function y el function (expresión function).</td><td>function calcular_ventas(unidades_a, unidades_b, unidades_c) {
+   return unidades_a*79 + unidades_b * 129 + unidades_c * 699;
+}</td>
+			</tr>
+			<tr>
+				<td>import.meta</td><td>El objeto import.meta expone el contenido especifico de la metadata al módulo JavaScript. Este contiene informacion sobre el módulo, como por ejemplo, la URL del mismo.</td><td>console.log(import.meta); // { url: "file:///home/user/my-module.js" }</td>
+			</tr>
+				<tr>
+				<td>import</td><td>La sentencia import se usa para importar funciones que han sido exportadas desde un módulo externo.</td><td>import defaultExport from "module-name";
+import * as name from "module-name";
+import { export } from "module-name";</td>
+			</tr>
+				<tr>
+				<td>let</td><td>La instrucción let declara una variable de alcance local con ámbito de bloque(block scope), la cual, opcionalmente, puede ser inicializada con algún valor.</td><td>let var1 [= valor1] [, var2 [= valor2]] [, ..., varN [= valorN]];</td>
+			</tr>
+			<tr>
+				<td>return</td><td>La sentencia return finaliza la ejecución de la función y especifica un valor para ser devuelto a quien llama a la función.</td><td>return;
+return true;
+return false;
+return x;
+return x + y / 3;</td>
+			</tr>
+			<tr>
+				<td>switch</td><td>La declaración switch evalúa una expresión, comparando el valor de esa expresión con una instancia case, y ejecuta declaraciones asociadas a ese case, así como las declaraciones en los case que siguen.</td><td>switch (expresión) {
+  case valor1:
+    //Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor1
+    [break;]
+  case valor2:
+    //Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor2
+    [break;]</td>
+			</tr>
+			<tr>
+				<td>throw</td><td>Lanza una excepcion definida por el usuario.</td><td>throw "Error2"; // genera una excepción con un valor cadena
+throw 42; // genera una excepción con un valor 42
+throw true; // genera una excepción con un valor true</td>
+			</tr>
+			<tr>
+				<td>try...catch</td><td>La declaración try...catch señala un bloque de instrucciones a intentar (try), y especifica una respuesta si se produce una excepción (catch).</td><td>try {
+  nonExistentFunction();
+} catch (error) {
+  console.error(error);</td>
+			</tr>
+			<tr>
+				<td>var</td><td>La sentencia var declara una variable, opcionalmente inicializándola con un valor.</td><td>var a = 0, b = 0;</td>
+			</tr>
+			<tr>
+				<td>while</td><td>Crea un bucle que ejecuta una sentencia especificada mientras cierta condición se evalúe como verdadera. Dicha condición es evaluada antes de ejecutar la sentencia</td><td>n = 0;
+x = 0;
+while (n < 3) {
+  n ++;
+  x += n;
+}</td>
+			</tr>
+		</table>
+	</div>
+	<hr>
+	<a href="index.html"> Regresar a la pagina principal</a>
+
+</body>
+</html>
