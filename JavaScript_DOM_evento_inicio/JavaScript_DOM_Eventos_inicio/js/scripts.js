@@ -51,9 +51,9 @@ console.log(nuevoEnlace);
 //console.log(5);
 
 
-window.onscroll = function() {
-    console.log('Scrolling...');
-}
+//window.onscroll = function() {
+    //console.log('Scrolling...');
+//}
 
 
 // Seleccionar elementos y asociarles un evento
