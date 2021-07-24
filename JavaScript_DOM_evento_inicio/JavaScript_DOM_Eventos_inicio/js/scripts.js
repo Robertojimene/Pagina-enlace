@@ -57,15 +57,15 @@ console.log(nuevoEnlace);
 
 
 // Seleccionar elementos y asociarles un evento
-const btnEnviar = document.querySelector('.boton--primario');
-btnEnviar.addEventListener('click', function(evento) {
-    console.log(evento);
-    evento.preventDefault();
+//const btnEnviar = document.querySelector('.boton--primario');
+//btnEnviar.addEventListener('click', function(evento) {
+    //console.log(evento);
+    //evento.preventDefault();
 
     //Validar un formulario
 
-    console.log('enviando formulario');
-});
+    //console.log('enviando formulario');
+//});
 
 // Eventos de los inputs y Textarea
 
