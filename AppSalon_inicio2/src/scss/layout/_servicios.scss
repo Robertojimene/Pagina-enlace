@@ -1,0 +1,17 @@
+.listado-servicios {
+    @include tablet {
+        @include grid(2, 2rem);
+    }
+
+    .servicio {
+        background-color: $blanco;
+        padding: $separacion / 2;
+
+        .nombre-servicio {
+            color: $negro;
+        }
+        .precio-servicio {
+            color: $azul;
+        }
+    }
+}
