@@ -1,7 +1,7 @@
 .paginacion {
     display: flex;
     justify-content: space-between;
-    margin-top: $separacion;
+    padding: $separacion 0;
 
     button {
         background-color: $azul;
@@ -12,10 +12,10 @@
         border: none;
         font-weight: $bold;
         text-transform: uppercase;
-        font-size: 5rem;
+        font-size: 2rem;
 
         &.ocultar {
-            display: none;
+            visibility: hidden;
         }
         &:hover {
             cursor: pointer;
