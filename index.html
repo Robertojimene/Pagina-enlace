@@ -2,23 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>App Salón</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header>
-        <h1 class="titulo">Trabajos en clase</h1>
-    </header>
-    <div class="nav-bg">
-    <nav class="navegacion-principal contenedor">
-        <a href="./quizz javascript/index.html">Ejemplo de JavaScript</a>
-        <a href="./tabla/palabrasreservadas.html">Tabla</a>
-        <a href="./JavaScript_DOM_evento_inicio/JavaScript_DOM_Eventos_inicio/contacto.html">JavaScript DOM</a>
-        <a href="#">Trabajo4</a>
-    </nav>
-    
+
+    <div class="contenedor-estetica">
+        <div class="imagen"></div>
+        <div class="app">
+            <header class="header">
+                <h1>App Peluqueria</h1>
+            </header>
+            <nav class="tabs">
+                <button type="button" data-paso="1">Servicios</button>
+                <button type="button" data-paso="2">Información Cliente</button>
+                <button type="button" data-paso="3">Resumen</button>
+            </nav>
+
+            <!--Inicia contenido app-->
+            <div class="seccion" id="paso-1">
+                <h2>Servicios</h2>
+                <p class="text-center">Elige tus servicios a continuacion.</p>
+                <div id="servicios" class="listado-servicios" ></div>
+            </div>
+            <div class="seccion" id="paso-2">
+                <h2>Tus Datos y Citas</h2>
+                <p class="text-center">Coloca tus datos y fecha de cita</p>
+                <form action="" class="formulario">
+                    <div class="campo">
+                        <label 
+                        for="nombre">Nombre</label>
+                        <input type="text"
+                        placeholder="Tu Nombre"
+                        name="nombre"
+                        id="nombre"
+                        >
+                    </div>
+                    <div class="campo">
+                        <label 
+                        for="fecha">Fecha</label>
+                        <input type="date"
+                        id="fecha"
+                        >
+                    </div>
+                    <div class="campo">
+                        <label 
+                        for="hora">Hora</label>
+                        <input type="time"
+                        id="hora"
+                        >
+                    </div>
+                </form>
+            </div>
+            <div class="seccion contenido-resumen" id="paso-3">
+                <h2>Resumen</h2>
+            </div>
+            <div class="paginacion">
+                <button id="anterior">&laquo;Anterior</button>
+                <button id="siguiente">Siguiente&raquo;</button>
+            </div>
+        </div>
+        
     </div>
+
+    <script src="build/js/bundle.min.js"></script>
 </body>
 </html>
