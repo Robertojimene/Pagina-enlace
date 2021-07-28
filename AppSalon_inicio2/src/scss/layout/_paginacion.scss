@@ -14,6 +14,9 @@
         text-transform: uppercase;
         font-size: 5rem;
 
+        &.ocultar {
+            display: none;
+        }
         &:hover {
             cursor: pointer;
         }
